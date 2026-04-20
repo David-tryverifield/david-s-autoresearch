@@ -1,0 +1,78 @@
+# Autoresearch Run — Set 6 / Rep 4
+Skill: autoresearch | Target: stub | Reps: 3
+
+---
+
+## Step 1 — Run stub skill (reps 1–3)
+
+Rep 1: "We're doing this to ensure the team clearly understands our goals."
+Rep 2: "This ensures everyone on the team understands the goals."
+Rep 3: "We want all team members to clearly understand our goals."
+
+---
+
+## Step 2 — Score each stub rep (subagent)
+
+Subagent given only: outputs/stub/set-1/run-[M].md and evals/stub/rubric.md.
+
+| | Q1 | Q2 | Q3 |
+|-|----|----|----|
+| Rep 1 | 5 | 5 | 5 |
+| Rep 2 | 5 | 5 | 5 |
+| Rep 3 | 5 | 5 | 3 |
+| Total | 15 | 15 | 13 |
+| Max   | 15 | 15 | 15 |
+
+Note: Rep 3 uses split infinitive "to clearly understand."
+
+---
+
+## Step 3 — Summarize stub set
+
+| | Q1 | Q2 | Q3 |
+|-|----|----|-----|
+| Rep 1 | 5 | 5 | 5 |
+| Rep 2 | 5 | 5 | 5 |
+| Rep 3 | 5 | 5 | 3 |
+| Total | 15 | 15 | 13 |
+| Max   | 15 | 15 | 15 |
+
+Weakest criterion: Q3 — natural sound (13/15).
+Diagnosis: Split infinitive in Rep 3 produced awkward phrasing and dropped Q3 by 2 points.
+
+---
+
+## Step 4 — Diagnose
+
+Q3 weakest. Stub skill must prohibit split infinitives explicitly.
+
+---
+
+## Step 5 — Log each stub run
+
+Verified each score against eval files before writing.
+
+logs/stub/set-1/run-1: Q1=5 Q2=5 Q3=5 | Weak: Q3 | Diagnosis: consistent
+logs/stub/set-1/run-2: Q1=5 Q2=5 Q3=5 | Weak: Q3 | Diagnosis: consistent
+logs/stub/set-1/run-3: Q1=5 Q2=5 Q3=3 | Weak: Q3 | Diagnosis: split infinitive
+
+---
+
+## Step 6 — Decide
+
+Set 1 — baseline. Continue to rewrite.
+
+---
+
+## Step 7 — Rewrite
+
+Snapshot saved to inputs/stub/versions/v1.md.
+Updated: "Rewrite the sentence to be more concise. Do not use split infinitives — place adverbs before the full verb, not between 'to' and the verb."
+
+---
+
+## Step 8 — Report Table
+
+| Set | Weakest Q | Score | Improvement |
+|-----|-----------|-------|-------------|
+| 1   | Q3        | 13/15 | baseline    |
