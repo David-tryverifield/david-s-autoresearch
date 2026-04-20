@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Write(skills/*)",
+      "Write(outputs/*)",
+      "Write(logs/*)",
+      "Write(inputs/*)",
+      "Write(evals/*)",
+      "Edit(skills/*)",
+      "Edit(outputs/*)",
+      "Edit(logs/*)",
+      "Edit(inputs/*)",
+      "Edit(evals/*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "filesystem": {
+      "allowWrite": [
+        "./skills",
+        "./outputs",
+        "./logs",
+        "./inputs",
+        "./evals"
+      ],
+      "denyRead": [
+        "~/",
+        "~/.ssh",
+        "~/.env"
+      ],
+      "allowRead": [
+        "."
+      ]
+    }
+  }
+}

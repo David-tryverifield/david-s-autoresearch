@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Runtime outputs
+outputs/
+logs/
+
+# Generated eval results (eval.md rubrics are kept)
+evals/**/set-*/
+
+# Skill version snapshots
+inputs/**/versions/
