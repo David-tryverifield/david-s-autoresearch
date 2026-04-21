@@ -66,7 +66,7 @@ claude
 Then tell Claude which skill to improve:
 
 ```
-let's run the client-avatar skill
+let's run the [skill-name] skill
 ```
 
 Claude will execute the full loop autonomously: run → score → summarize → diagnose → log → decide → rewrite.
